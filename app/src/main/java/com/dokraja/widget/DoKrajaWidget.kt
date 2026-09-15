@@ -69,8 +69,7 @@ private fun calculateStats(endDate: LocalDate): Stats {
     return Stats(total, school, saturdays)
 }
 
-private fun paletteToColorProviders(palette: ThemePalette): ColorProviders {
-    return ColorProviders(
+private fun paletteToColorProviders(palette: ThemePalette) = ColorProviders(
         light = lightColorScheme(
             primary = palette.light.primary,
             onPrimary = palette.light.onPrimary,
@@ -92,7 +91,6 @@ private fun paletteToColorProviders(palette: ThemePalette): ColorProviders {
             onTertiaryContainer = palette.dark.onTertiaryContainer
         )
     )
-}
 
 class DoKrajaWidget : GlanceAppWidget() {
 
